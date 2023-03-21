@@ -2,7 +2,8 @@
 #include <cpr/cpr.h>
 
 
-int main() {
+int main()
+{
     cpr::Response response = cpr::Get (cpr::Url("http://httpbin.org/html"),
                                 cpr::Header({{"accept", "text/html"}}));
     if (response.status_code == 200) {
